@@ -44,7 +44,7 @@ namespace ProyectoMetodosF
 
                     if (Math.Abs(result - previousRoot) < tol)
                     {
-                        txtResult.AppendText("Se alcanzó la tolerancia deseada.\n");
+                        txtResult.AppendText("Se alcanzó la tolerancia deda.\n");
                         return;
                     }
 
