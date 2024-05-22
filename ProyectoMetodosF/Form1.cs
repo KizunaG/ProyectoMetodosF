@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace ProyectoMetodosF
 {
@@ -16,11 +19,26 @@ namespace ProyectoMetodosF
         {
             InitializeComponent();
         }
-
+        SqlConnection conexion = new SqlConnection("server=MSI\\SQLEXPRESS;database=usuario;integrated security=true");
         private void button1_Click(object sender, EventArgs e)
         {
-            Inicio InicioForm = new Inicio();
-            InicioForm.Show();
+            conexion.Open();
+            string consulta = "SELECT * from usuario where usuario='" + txtUsuario.Text + "' and contraseña= '" + txtContraseña.Text + "'";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader lector;
+            lector = comando.ExecuteReader();
+
+            if (lector.HasRows == true)
+            {
+                Inicio frmbienvenido = new Inicio();
+                this.Hide();
+                frmbienvenido.Show();
+            }
+            else
+            {
+                MessageBox.Show("Datos Invalidos");
+            }
+            conexion.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
