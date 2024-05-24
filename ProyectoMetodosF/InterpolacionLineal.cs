@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProyectoMetodosF
 {
-    public partial class InterpolacionLineal : Form
+    public partial class MetodoSecante : Form
     {
-        public InterpolacionLineal()
+        public MetodoSecante()
         {
             InitializeComponent();
         }

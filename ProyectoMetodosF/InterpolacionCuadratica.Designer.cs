@@ -1,6 +1,6 @@
 ﻿namespace ProyectoMetodosF
 {
-    partial class InterpolacionCuadratica
+    partial class MetodoGauss
     {
         /// <summary>
         /// Required designer variable.
@@ -44,76 +44,86 @@
             // 
             // x0TextBox
             // 
-            this.x0TextBox.Location = new System.Drawing.Point(150, 45);
+            this.x0TextBox.Location = new System.Drawing.Point(53, 55);
+            this.x0TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.x0TextBox.Name = "x0TextBox";
-            this.x0TextBox.Size = new System.Drawing.Size(100, 20);
+            this.x0TextBox.Size = new System.Drawing.Size(132, 22);
             this.x0TextBox.TabIndex = 0;
             // 
             // x1TextBox
             // 
-            this.x1TextBox.Location = new System.Drawing.Point(282, 45);
+            this.x1TextBox.Location = new System.Drawing.Point(290, 55);
+            this.x1TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.x1TextBox.Name = "x1TextBox";
-            this.x1TextBox.Size = new System.Drawing.Size(100, 20);
+            this.x1TextBox.Size = new System.Drawing.Size(132, 22);
             this.x1TextBox.TabIndex = 1;
             // 
             // x2TextBox
             // 
-            this.x2TextBox.Location = new System.Drawing.Point(415, 45);
+            this.x2TextBox.Location = new System.Drawing.Point(475, 55);
+            this.x2TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.x2TextBox.Name = "x2TextBox";
-            this.x2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.x2TextBox.Size = new System.Drawing.Size(132, 22);
             this.x2TextBox.TabIndex = 2;
             // 
             // xTargetTextBox
             // 
-            this.xTargetTextBox.Location = new System.Drawing.Point(550, 45);
+            this.xTargetTextBox.Location = new System.Drawing.Point(669, 55);
+            this.xTargetTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.xTargetTextBox.Name = "xTargetTextBox";
-            this.xTargetTextBox.Size = new System.Drawing.Size(100, 20);
+            this.xTargetTextBox.Size = new System.Drawing.Size(132, 22);
             this.xTargetTextBox.TabIndex = 3;
             // 
             // f_x0TextBox
             // 
-            this.f_x0TextBox.Location = new System.Drawing.Point(194, 112);
+            this.f_x0TextBox.Location = new System.Drawing.Point(199, 138);
+            this.f_x0TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.f_x0TextBox.Name = "f_x0TextBox";
-            this.f_x0TextBox.Size = new System.Drawing.Size(100, 20);
+            this.f_x0TextBox.Size = new System.Drawing.Size(132, 22);
             this.f_x0TextBox.TabIndex = 4;
             // 
             // f_x1TextBox
             // 
-            this.f_x1TextBox.Location = new System.Drawing.Point(317, 112);
+            this.f_x1TextBox.Location = new System.Drawing.Point(384, 138);
+            this.f_x1TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.f_x1TextBox.Name = "f_x1TextBox";
-            this.f_x1TextBox.Size = new System.Drawing.Size(100, 20);
+            this.f_x1TextBox.Size = new System.Drawing.Size(132, 22);
             this.f_x1TextBox.TabIndex = 5;
             // 
             // f_x2TextBox
             // 
-            this.f_x2TextBox.Location = new System.Drawing.Point(448, 112);
+            this.f_x2TextBox.Location = new System.Drawing.Point(583, 138);
+            this.f_x2TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.f_x2TextBox.Name = "f_x2TextBox";
-            this.f_x2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.f_x2TextBox.Size = new System.Drawing.Size(132, 22);
             this.f_x2TextBox.TabIndex = 6;
             // 
             // resultLabel
             // 
             this.resultLabel.AutoSize = true;
-            this.resultLabel.Location = new System.Drawing.Point(215, 162);
+            this.resultLabel.Location = new System.Drawing.Point(287, 199);
+            this.resultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(35, 13);
+            this.resultLabel.Size = new System.Drawing.Size(44, 16);
             this.resultLabel.TabIndex = 7;
             this.resultLabel.Text = "label1";
             // 
             // errorLabel
             // 
             this.errorLabel.AutoSize = true;
-            this.errorLabel.Location = new System.Drawing.Point(492, 162);
+            this.errorLabel.Location = new System.Drawing.Point(656, 199);
+            this.errorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(35, 13);
+            this.errorLabel.Size = new System.Drawing.Size(44, 16);
             this.errorLabel.TabIndex = 8;
             this.errorLabel.Text = "label2";
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(327, 225);
+            this.calculateButton.Location = new System.Drawing.Point(436, 277);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.Size = new System.Drawing.Size(100, 28);
             this.calculateButton.TabIndex = 9;
             this.calculateButton.Text = "Calcular";
             this.calculateButton.UseVisualStyleBackColor = true;
@@ -121,9 +131,10 @@
             // 
             // btnclose
             // 
-            this.btnclose.Location = new System.Drawing.Point(12, 265);
+            this.btnclose.Location = new System.Drawing.Point(16, 326);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(75, 23);
+            this.btnclose.Size = new System.Drawing.Size(100, 28);
             this.btnclose.TabIndex = 10;
             this.btnclose.Text = "Cerrar";
             this.btnclose.UseVisualStyleBackColor = true;
@@ -131,19 +142,20 @@
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(426, 225);
+            this.btnlimpiar.Location = new System.Drawing.Point(568, 277);
+            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.Size = new System.Drawing.Size(100, 28);
             this.btnlimpiar.TabIndex = 11;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = true;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
-            // InterpolacionCuadratica
+            // MetodoGauss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(849, 507);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.calculateButton);
@@ -156,8 +168,9 @@
             this.Controls.Add(this.x2TextBox);
             this.Controls.Add(this.x1TextBox);
             this.Controls.Add(this.x0TextBox);
-            this.Name = "InterpolacionCuadratica";
-            this.Text = "InterpolacionCuadratica";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "MetodoGauss";
+            this.Text = "MetodoGauss";
             this.ResumeLayout(false);
             this.PerformLayout();
 

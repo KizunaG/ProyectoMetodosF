@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProyectoMetodosF
 {
-    public partial class InterpolacionCuadratica : Form
+    public partial class MetodoGauss : Form
     {
-        public InterpolacionCuadratica()
+        public MetodoGauss()
         {
             InitializeComponent();
         }

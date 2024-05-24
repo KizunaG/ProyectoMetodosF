@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProyectoMetodosF
 {
-    public partial class CalculoErrores : Form
+    public partial class MetodoNewton : Form
     {
-        public CalculoErrores()
+        public MetodoNewton()
         {
             InitializeComponent();
         }

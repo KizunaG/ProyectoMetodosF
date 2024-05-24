@@ -1,6 +1,6 @@
 ﻿namespace ProyectoMetodosF
 {
-    partial class InterpolacionLineal
+    partial class MetodoSecante
     {
         /// <summary>
         /// Required designer variable.
@@ -42,60 +42,68 @@
             // 
             // txtX0
             // 
-            this.txtX0.Location = new System.Drawing.Point(36, 67);
+            this.txtX0.Location = new System.Drawing.Point(13, 82);
+            this.txtX0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtX0.Name = "txtX0";
-            this.txtX0.Size = new System.Drawing.Size(100, 20);
+            this.txtX0.Size = new System.Drawing.Size(132, 22);
             this.txtX0.TabIndex = 0;
             // 
             // txtX1
             // 
-            this.txtX1.Location = new System.Drawing.Point(161, 67);
+            this.txtX1.Location = new System.Drawing.Point(184, 82);
+            this.txtX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(100, 20);
+            this.txtX1.Size = new System.Drawing.Size(132, 22);
             this.txtX1.TabIndex = 1;
             // 
             // txtLogX0
             // 
-            this.txtLogX0.Location = new System.Drawing.Point(283, 67);
+            this.txtLogX0.Location = new System.Drawing.Point(345, 82);
+            this.txtLogX0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogX0.Name = "txtLogX0";
-            this.txtLogX0.Size = new System.Drawing.Size(100, 20);
+            this.txtLogX0.Size = new System.Drawing.Size(132, 22);
             this.txtLogX0.TabIndex = 2;
             // 
             // txtLogX1
             // 
-            this.txtLogX1.Location = new System.Drawing.Point(409, 67);
+            this.txtLogX1.Location = new System.Drawing.Point(497, 82);
+            this.txtLogX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogX1.Name = "txtLogX1";
-            this.txtLogX1.Size = new System.Drawing.Size(100, 20);
+            this.txtLogX1.Size = new System.Drawing.Size(132, 22);
             this.txtLogX1.TabIndex = 3;
             // 
             // txtXTarget
             // 
-            this.txtXTarget.Location = new System.Drawing.Point(542, 67);
+            this.txtXTarget.Location = new System.Drawing.Point(660, 82);
+            this.txtXTarget.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtXTarget.Name = "txtXTarget";
-            this.txtXTarget.Size = new System.Drawing.Size(100, 20);
+            this.txtXTarget.Size = new System.Drawing.Size(132, 22);
             this.txtXTarget.TabIndex = 4;
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(299, 121);
+            this.lblResult.Location = new System.Drawing.Point(399, 149);
+            this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 13);
+            this.lblResult.Size = new System.Drawing.Size(0, 16);
             this.lblResult.TabIndex = 5;
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(406, 121);
+            this.lblError.Location = new System.Drawing.Point(541, 149);
+            this.lblError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 16);
             this.lblError.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(283, 177);
+            this.button1.Location = new System.Drawing.Point(377, 218);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 7;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
@@ -103,9 +111,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(409, 177);
+            this.button2.Location = new System.Drawing.Point(545, 218);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 8;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
@@ -113,19 +122,20 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(25, 263);
+            this.button3.Location = new System.Drawing.Point(33, 324);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 28);
             this.button3.TabIndex = 9;
             this.button3.Text = "Cerrar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // InterpolacionLineal
+            // MetodoSecante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(849, 507);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -136,8 +146,9 @@
             this.Controls.Add(this.txtLogX0);
             this.Controls.Add(this.txtX1);
             this.Controls.Add(this.txtX0);
-            this.Name = "InterpolacionLineal";
-            this.Text = "InterpolacionLineal";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "MetodoSecante";
+            this.Text = "MetodoSecante";
             this.ResumeLayout(false);
             this.PerformLayout();
 
