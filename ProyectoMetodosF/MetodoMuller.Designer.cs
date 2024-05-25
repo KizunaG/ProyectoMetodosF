@@ -28,60 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtFunction = new System.Windows.Forms.TextBox();
-            this.txtX0 = new System.Windows.Forms.TextBox();
-            this.txtX1 = new System.Windows.Forms.TextBox();
-            this.txtX2 = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.txtResult = new System.Windows.Forms.TextBox();
             this.btnclose = new System.Windows.Forms.Button();
+            this.bntCalcular = new System.Windows.Forms.Button();
+            this.txtFuncion = new System.Windows.Forms.TextBox();
+            this.txtx0 = new System.Windows.Forms.TextBox();
+            this.txtx1 = new System.Windows.Forms.TextBox();
+            this.txtx2 = new System.Windows.Forms.TextBox();
+            this.txtTolerancia = new System.Windows.Forms.TextBox();
+            this.txtMaxiter = new System.Windows.Forms.TextBox();
+            this.dataGridViewResultadoMuller = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtFunction
-            // 
-            this.txtFunction.Location = new System.Drawing.Point(101, 46);
-            this.txtFunction.Name = "txtFunction";
-            this.txtFunction.Size = new System.Drawing.Size(100, 20);
-            this.txtFunction.TabIndex = 0;
-            // 
-            // txtX0
-            // 
-            this.txtX0.Location = new System.Drawing.Point(220, 46);
-            this.txtX0.Name = "txtX0";
-            this.txtX0.Size = new System.Drawing.Size(100, 20);
-            this.txtX0.TabIndex = 1;
-            // 
-            // txtX1
-            // 
-            this.txtX1.Location = new System.Drawing.Point(347, 46);
-            this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(100, 20);
-            this.txtX1.TabIndex = 2;
-            // 
-            // txtX2
-            // 
-            this.txtX2.Location = new System.Drawing.Point(476, 46);
-            this.txtX2.Name = "txtX2";
-            this.txtX2.Size = new System.Drawing.Size(100, 20);
-            this.txtX2.TabIndex = 3;
-            // 
-            // btnCalculate
-            // 
-            this.btnCalculate.Location = new System.Drawing.Point(245, 125);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 4;
-            this.btnCalculate.Text = "button1";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
-            // txtResult
-            // 
-            this.txtResult.Location = new System.Drawing.Point(394, 125);
-            this.txtResult.Multiline = true;
-            this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(246, 140);
-            this.txtResult.TabIndex = 5;
             // 
             // btnclose
             // 
@@ -93,33 +50,97 @@
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
+            // bntCalcular
+            // 
+            this.bntCalcular.Location = new System.Drawing.Point(310, 175);
+            this.bntCalcular.Name = "bntCalcular";
+            this.bntCalcular.Size = new System.Drawing.Size(75, 23);
+            this.bntCalcular.TabIndex = 7;
+            this.bntCalcular.Text = "button1";
+            this.bntCalcular.UseVisualStyleBackColor = true;
+            this.bntCalcular.Click += new System.EventHandler(this.bntCalcular_Click);
+            // 
+            // txtFuncion
+            // 
+            this.txtFuncion.Location = new System.Drawing.Point(100, 44);
+            this.txtFuncion.Name = "txtFuncion";
+            this.txtFuncion.Size = new System.Drawing.Size(100, 20);
+            this.txtFuncion.TabIndex = 8;
+            // 
+            // txtx0
+            // 
+            this.txtx0.Location = new System.Drawing.Point(219, 44);
+            this.txtx0.Name = "txtx0";
+            this.txtx0.Size = new System.Drawing.Size(100, 20);
+            this.txtx0.TabIndex = 9;
+            // 
+            // txtx1
+            // 
+            this.txtx1.Location = new System.Drawing.Point(358, 44);
+            this.txtx1.Name = "txtx1";
+            this.txtx1.Size = new System.Drawing.Size(100, 20);
+            this.txtx1.TabIndex = 10;
+            // 
+            // txtx2
+            // 
+            this.txtx2.Location = new System.Drawing.Point(484, 44);
+            this.txtx2.Name = "txtx2";
+            this.txtx2.Size = new System.Drawing.Size(100, 20);
+            this.txtx2.TabIndex = 11;
+            // 
+            // txtTolerancia
+            // 
+            this.txtTolerancia.Location = new System.Drawing.Point(270, 98);
+            this.txtTolerancia.Name = "txtTolerancia";
+            this.txtTolerancia.Size = new System.Drawing.Size(100, 20);
+            this.txtTolerancia.TabIndex = 12;
+            // 
+            // txtMaxiter
+            // 
+            this.txtMaxiter.Location = new System.Drawing.Point(388, 98);
+            this.txtMaxiter.Name = "txtMaxiter";
+            this.txtMaxiter.Size = new System.Drawing.Size(100, 20);
+            this.txtMaxiter.TabIndex = 13;
+            // 
+            // dataGridViewResultadoMuller
+            // 
+            this.dataGridViewResultadoMuller.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResultadoMuller.Location = new System.Drawing.Point(510, 115);
+            this.dataGridViewResultadoMuller.Name = "dataGridViewResultadoMuller";
+            this.dataGridViewResultadoMuller.Size = new System.Drawing.Size(240, 150);
+            this.dataGridViewResultadoMuller.TabIndex = 14;
+            // 
             // MetodoMuller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewResultadoMuller);
+            this.Controls.Add(this.txtMaxiter);
+            this.Controls.Add(this.txtTolerancia);
+            this.Controls.Add(this.txtx2);
+            this.Controls.Add(this.txtx1);
+            this.Controls.Add(this.txtx0);
+            this.Controls.Add(this.txtFuncion);
+            this.Controls.Add(this.bntCalcular);
             this.Controls.Add(this.btnclose);
-            this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.txtX2);
-            this.Controls.Add(this.txtX1);
-            this.Controls.Add(this.txtX0);
-            this.Controls.Add(this.txtFunction);
             this.Name = "MetodoMuller";
             this.Text = "MetodoMuller";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtFunction;
-        private System.Windows.Forms.TextBox txtX0;
-        private System.Windows.Forms.TextBox txtX1;
-        private System.Windows.Forms.TextBox txtX2;
-        private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.Button bntCalcular;
+        private System.Windows.Forms.TextBox txtFuncion;
+        private System.Windows.Forms.TextBox txtx0;
+        private System.Windows.Forms.TextBox txtx1;
+        private System.Windows.Forms.TextBox txtx2;
+        private System.Windows.Forms.TextBox txtTolerancia;
+        private System.Windows.Forms.TextBox txtMaxiter;
+        private System.Windows.Forms.DataGridView dataGridViewResultadoMuller;
     }
 }
