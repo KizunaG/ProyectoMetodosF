@@ -40,7 +40,7 @@
             // txtFunction
             // 
             this.txtFunction.Location = new System.Drawing.Point(135, 57);
-            this.txtFunction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFunction.Margin = new System.Windows.Forms.Padding(4);
             this.txtFunction.Name = "txtFunction";
             this.txtFunction.Size = new System.Drawing.Size(132, 22);
             this.txtFunction.TabIndex = 0;
@@ -48,7 +48,7 @@
             // txtX0
             // 
             this.txtX0.Location = new System.Drawing.Point(293, 57);
-            this.txtX0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtX0.Margin = new System.Windows.Forms.Padding(4);
             this.txtX0.Name = "txtX0";
             this.txtX0.Size = new System.Drawing.Size(132, 22);
             this.txtX0.TabIndex = 1;
@@ -56,7 +56,7 @@
             // txtX1
             // 
             this.txtX1.Location = new System.Drawing.Point(463, 57);
-            this.txtX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtX1.Margin = new System.Windows.Forms.Padding(4);
             this.txtX1.Name = "txtX1";
             this.txtX1.Size = new System.Drawing.Size(132, 22);
             this.txtX1.TabIndex = 2;
@@ -64,7 +64,7 @@
             // txtX2
             // 
             this.txtX2.Location = new System.Drawing.Point(635, 57);
-            this.txtX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtX2.Margin = new System.Windows.Forms.Padding(4);
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(132, 22);
             this.txtX2.TabIndex = 3;
@@ -72,18 +72,18 @@
             // btnCalculate
             // 
             this.btnCalculate.Location = new System.Drawing.Point(327, 154);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(100, 28);
             this.btnCalculate.TabIndex = 4;
-            this.btnCalculate.Text = "button1";
+            this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // txtResult
             // 
             this.txtResult.Location = new System.Drawing.Point(472, 172);
-            this.txtResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtResult.Margin = new System.Windows.Forms.Padding(4);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(327, 171);
@@ -92,7 +92,7 @@
             // btnclose
             // 
             this.btnclose.Location = new System.Drawing.Point(60, 298);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(4);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(100, 28);
             this.btnclose.TabIndex = 6;
@@ -112,7 +112,7 @@
             this.Controls.Add(this.txtX1);
             this.Controls.Add(this.txtX0);
             this.Controls.Add(this.txtFunction);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MetodoMuller";
             this.Text = "MetodoMuller";
             this.ResumeLayout(false);
