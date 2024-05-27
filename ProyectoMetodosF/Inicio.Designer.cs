@@ -28,85 +28,223 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnAcercade = new System.Windows.Forms.Button();
+            this.btnIntegrantes = new System.Windows.Forms.Button();
+            this.panelMetodosSubmenu = new System.Windows.Forms.Panel();
+            this.btnGauss = new System.Windows.Forms.Button();
+            this.btnMuller = new System.Windows.Forms.Button();
+            this.btnSecante = new System.Windows.Forms.Button();
+            this.btnNewton = new System.Windows.Forms.Button();
+            this.btnMetodos = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelSideMenu.SuspendLayout();
+            this.panelMetodosSubmenu.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelSideMenu
+            // 
+            this.panelSideMenu.Controls.Add(this.btnCerrarSesion);
+            this.panelSideMenu.Controls.Add(this.btnAcercade);
+            this.panelSideMenu.Controls.Add(this.btnIntegrantes);
+            this.panelSideMenu.Controls.Add(this.panelMetodosSubmenu);
+            this.panelSideMenu.Controls.Add(this.btnMetodos);
+            this.panelSideMenu.Controls.Add(this.button1);
+            this.panelSideMenu.Controls.Add(this.panel2);
+            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelSideMenu.Name = "panelSideMenu";
+            this.panelSideMenu.Size = new System.Drawing.Size(200, 554);
+            this.panelSideMenu.TabIndex = 3;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 484);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(200, 45);
+            this.btnCerrarSesion.TabIndex = 6;
+            this.btnCerrarSesion.Text = "Cerrrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // btnAcercade
+            // 
+            this.btnAcercade.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAcercade.Location = new System.Drawing.Point(0, 439);
+            this.btnAcercade.Name = "btnAcercade";
+            this.btnAcercade.Size = new System.Drawing.Size(200, 45);
+            this.btnAcercade.TabIndex = 5;
+            this.btnAcercade.Text = "Acerca de";
+            this.btnAcercade.UseVisualStyleBackColor = true;
+            this.btnAcercade.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnIntegrantes
+            // 
+            this.btnIntegrantes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIntegrantes.Location = new System.Drawing.Point(0, 394);
+            this.btnIntegrantes.Name = "btnIntegrantes";
+            this.btnIntegrantes.Size = new System.Drawing.Size(200, 45);
+            this.btnIntegrantes.TabIndex = 4;
+            this.btnIntegrantes.Text = "Integrantes";
+            this.btnIntegrantes.UseVisualStyleBackColor = true;
+            this.btnIntegrantes.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // panelMetodosSubmenu
+            // 
+            this.panelMetodosSubmenu.Controls.Add(this.btnGauss);
+            this.panelMetodosSubmenu.Controls.Add(this.btnMuller);
+            this.panelMetodosSubmenu.Controls.Add(this.btnSecante);
+            this.panelMetodosSubmenu.Controls.Add(this.btnNewton);
+            this.panelMetodosSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMetodosSubmenu.Location = new System.Drawing.Point(0, 190);
+            this.panelMetodosSubmenu.Name = "panelMetodosSubmenu";
+            this.panelMetodosSubmenu.Size = new System.Drawing.Size(200, 204);
+            this.panelMetodosSubmenu.TabIndex = 3;
+            // 
+            // btnGauss
+            // 
+            this.btnGauss.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGauss.Location = new System.Drawing.Point(0, 135);
+            this.btnGauss.Name = "btnGauss";
+            this.btnGauss.Size = new System.Drawing.Size(200, 45);
+            this.btnGauss.TabIndex = 3;
+            this.btnGauss.Text = "Método de Gauss";
+            this.btnGauss.UseVisualStyleBackColor = true;
+            this.btnGauss.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // btnMuller
+            // 
+            this.btnMuller.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMuller.Location = new System.Drawing.Point(0, 90);
+            this.btnMuller.Name = "btnMuller";
+            this.btnMuller.Size = new System.Drawing.Size(200, 45);
+            this.btnMuller.TabIndex = 2;
+            this.btnMuller.Text = "Método de Müller";
+            this.btnMuller.UseVisualStyleBackColor = true;
+            this.btnMuller.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnSecante
+            // 
+            this.btnSecante.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSecante.Location = new System.Drawing.Point(0, 45);
+            this.btnSecante.Name = "btnSecante";
+            this.btnSecante.Size = new System.Drawing.Size(200, 45);
+            this.btnSecante.TabIndex = 1;
+            this.btnSecante.Text = "Método de la Secante";
+            this.btnSecante.UseVisualStyleBackColor = true;
+            this.btnSecante.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnNewton
+            // 
+            this.btnNewton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNewton.Location = new System.Drawing.Point(0, 0);
+            this.btnNewton.Name = "btnNewton";
+            this.btnNewton.Size = new System.Drawing.Size(200, 45);
+            this.btnNewton.TabIndex = 0;
+            this.btnNewton.Text = "Método de Newton Raphson";
+            this.btnNewton.UseVisualStyleBackColor = true;
+            this.btnNewton.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnMetodos
+            // 
+            this.btnMetodos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMetodos.Location = new System.Drawing.Point(0, 145);
+            this.btnMetodos.Name = "btnMetodos";
+            this.btnMetodos.Size = new System.Drawing.Size(200, 45);
+            this.btnMetodos.TabIndex = 2;
+            this.btnMetodos.Text = "Métodos";
+            this.btnMetodos.UseVisualStyleBackColor = true;
+            this.btnMetodos.Click += new System.EventHandler(this.btnMetodos_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(97, 145);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(0, 100);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Interpolación Lineal";
+            this.button1.Size = new System.Drawing.Size(200, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Inicio ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // panel2
             // 
-            this.button2.Location = new System.Drawing.Point(269, 145);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Metodo Muller";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 0;
             // 
-            // button3
+            // panelChildForm
             // 
-            this.button3.Location = new System.Drawing.Point(12, 27);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Cerrar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panelChildForm.Controls.Add(this.label2);
+            this.panelChildForm.Controls.Add(this.label1);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(200, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(867, 554);
+            this.panelChildForm.TabIndex = 4;
             // 
-            // button4
+            // label2
             // 
-            this.button4.Location = new System.Drawing.Point(391, 145);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Interpolación Cuadratica";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(299, 270);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 36);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Métodos Númericos";
             // 
-            // button5
+            // label1
             // 
-            this.button5.Location = new System.Drawing.Point(561, 145);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Calculo de errores";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(368, 197);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 38);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Proyecto";
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.panelSideMenu);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Inicio";
             this.Text = "Inicio";
+            this.panelSideMenu.ResumeLayout(false);
+            this.panelMetodosSubmenu.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Panel panelSideMenu;
+        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnAcercade;
+        private System.Windows.Forms.Button btnIntegrantes;
+        private System.Windows.Forms.Panel panelMetodosSubmenu;
+        private System.Windows.Forms.Button btnGauss;
+        private System.Windows.Forms.Button btnMuller;
+        private System.Windows.Forms.Button btnSecante;
+        private System.Windows.Forms.Button btnNewton;
+        private System.Windows.Forms.Button btnMetodos;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

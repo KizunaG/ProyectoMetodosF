@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acercade.Designer.cs">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalculoErrores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,18 @@
     </Compile>
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioProyecto.Designer.cs">
+      <DependentUpon>InicioProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Integrantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Integrantes.Designer.cs">
+      <DependentUpon>Integrantes.cs</DependentUpon>
     </Compile>
     <Compile Include="InterCuadra.cs" />
     <Compile Include="InterLI.cs" />
@@ -107,6 +125,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acercade.resx">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculoErrores.resx">
       <DependentUpon>CalculoErrores.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioProyecto.resx">
+      <DependentUpon>InicioProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Integrantes.resx">
+      <DependentUpon>Integrantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InterpolacionCuadratica.resx">
       <DependentUpon>InterpolacionCuadratica.cs</DependentUpon>
@@ -133,6 +160,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -147,6 +175,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo metodos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logometodos20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo fond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fffffffffffffffffff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2024-05-24 141342.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccccccccccccccccccccccc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
