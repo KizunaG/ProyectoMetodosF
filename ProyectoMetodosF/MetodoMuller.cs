@@ -21,7 +21,12 @@ namespace ProyectoMetodosF
             InitializeComponent();
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bntCalcular_Click(object sender, EventArgs e)
         {
             try
             {
@@ -67,7 +72,6 @@ namespace ProyectoMetodosF
                 }
 
                 var iteraciones = new List<(int iteracion, double xr, double error)>();
-
                 // Implementación del método de Müller
                 for (int i = 0; i < maxIter; i++)
                 {
@@ -127,7 +131,6 @@ namespace ProyectoMetodosF
                         }
                     }
                 }
-
                 // Cargar y mostrar los resultados en el DataGridView
                 CargarDatosDesdeSQL();
             }
@@ -190,11 +193,65 @@ namespace ProyectoMetodosF
                 MessageBox.Show("Error al cargar datos: " + ex.Message);
             }
         }
-
-
         private void btnclose_Click(object sender, EventArgs e)
+
         {
-            this.Close();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT id, calculo_id, iteracion, xr, error FROM MetodoMuller";
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    dataGridViewResultadoMuller.DataSource = dataTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar datos: " + ex.Message);
+            }
+        }
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF Files|*.pdf";
+            saveFileDialog.Title = "Save a PDF File";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(saveFileDialog.FileName, FileMode.Create))
+                {
+                    Document pdfDoc = new Document(PageSize.A4);
+                    PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+
+                    PdfPTable table = new PdfPTable(dataGridViewResultadoMuller.Columns.Count);
+
+                    // Agregar encabezados
+                    foreach (DataGridViewColumn column in dataGridViewResultadoMuller.Columns)
+                    {
+                        table.AddCell(new Phrase(column.HeaderText));
+                    }
+
+                    // Agregar filas
+                    foreach (DataGridViewRow row in dataGridViewResultadoMuller.Rows)
+                    {
+                        if (row.IsNewRow) continue;
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            table.AddCell(new Phrase(cell.Value?.ToString() ?? ""));
+                        }
+                    }
+
+                    pdfDoc.Add(table);
+                    pdfDoc.Close();
+                }
+            }
         }
 
         private void btnPdf_Click(object sender, EventArgs e)
@@ -236,4 +293,7 @@ namespace ProyectoMetodosF
             }
         }
     }
+
 }
+    
+

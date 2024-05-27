@@ -69,7 +69,7 @@
             this.txtx2.Size = new System.Drawing.Size(100, 20);
             this.txtx2.TabIndex = 3;
             // 
-            // btnCalculate
+            // txtx1
             // 
             this.btnCalculate.Location = new System.Drawing.Point(151, 168);
             this.btnCalculate.Name = "btnCalculate";
@@ -78,7 +78,7 @@
             this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
+            //
             // btnclose
             // 
             this.btnclose.Location = new System.Drawing.Point(45, 242);
@@ -88,6 +88,7 @@
             this.btnclose.Text = "Cerrar";
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+           
             // 
             // dataGridViewResultadoMuller
             // 
@@ -145,7 +146,6 @@
         }
 
         #endregion
-
         private System.Windows.Forms.TextBox txtFuncion;
         private System.Windows.Forms.TextBox txtx0;
         private System.Windows.Forms.TextBox txtx1;
@@ -156,5 +156,6 @@
         private System.Windows.Forms.TextBox txtTolerancia;
         private System.Windows.Forms.TextBox txtMaxiter;
         private System.Windows.Forms.Button btnPdf;
+
     }
 }
