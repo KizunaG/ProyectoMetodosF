@@ -19,7 +19,7 @@ namespace ProyectoMetodosF
         {
             InitializeComponent();
         }
-        SqlConnection conexion = new SqlConnection("server=MSI\\SQLEXPRESS;database=usuario;integrated security=true");
+        SqlConnection conexion = new SqlConnection("server=LAPTOP-IUQ31NPB\\SQLEXPRESS; Initial Catalog=ProyectoMetodos; Integrated security=true;");
         private void button1_Click(object sender, EventArgs e)
         {
             conexion.Open();
