@@ -11,25 +11,22 @@ using System.Drawing.Printing;
 using LinqExpression = System.Linq.Expressions.Expression;
 using System.Xml.Linq;
 
-
 namespace ProyectoMetodosF
 {
     public partial class MetodoMuller : Form
     {
-
         private string connectionString = "Data source=LAPTOP-IUQ31NPB\\SQLEXPRESS; Initial Catalog=ProyectoMetodos; Integrated security=true;";
-
         public MetodoMuller()
         {
             InitializeComponent();
         }
 
-        private void btnclose_Click(object sender, EventArgs e)
+        private void btnclose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void bntCalcular_Click(object sender, EventArgs e)
+        private void btnCalculate_Click(object sender, EventArgs e)
         {
             try
             {
@@ -124,7 +121,7 @@ namespace ProyectoMetodosF
 
                     foreach (var iter in iteraciones)
                     {
-                        string query = "INSERT INTO MetodoMuller(calculo_id, iteracion, xr, error) VALUES (@calculo_id, @iteracion, @xr, @error)";
+                        string query = "INSERT INTO MetodoMuller (calculo_id, iteracion, xr, error) VALUES (@calculo_id, @iteracion, @xr, @error)";
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
                             command.Parameters.AddWithValue("@calculo_id", 1); // Podrías generar un nuevo calculo_id
@@ -237,7 +234,7 @@ namespace ProyectoMetodosF
             }
         }
     }
-
 }
+
     
 
