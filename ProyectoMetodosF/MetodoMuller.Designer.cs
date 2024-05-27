@@ -28,49 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtFunction = new System.Windows.Forms.TextBox();
-            this.txtX0 = new System.Windows.Forms.TextBox();
-            this.txtX1 = new System.Windows.Forms.TextBox();
-            this.txtX2 = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.txtResult = new System.Windows.Forms.TextBox();
             this.btnclose = new System.Windows.Forms.Button();
+            this.bntCalcular = new System.Windows.Forms.Button();
+            this.txtFuncion = new System.Windows.Forms.TextBox();
+            this.txtx0 = new System.Windows.Forms.TextBox();
+            this.txtx1 = new System.Windows.Forms.TextBox();
+            this.txtx2 = new System.Windows.Forms.TextBox();
+            this.txtTolerancia = new System.Windows.Forms.TextBox();
+            this.txtMaxiter = new System.Windows.Forms.TextBox();
+            this.dataGridViewResultadoMuller = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtFunction
+            // btnclose
             // 
+
             this.txtFunction.Location = new System.Drawing.Point(135, 57);
             this.txtFunction.Margin = new System.Windows.Forms.Padding(4);
             this.txtFunction.Name = "txtFunction";
             this.txtFunction.Size = new System.Drawing.Size(132, 22);
             this.txtFunction.TabIndex = 0;
+
             // 
-            // txtX0
+            // bntCalcular
             // 
+          
             this.txtX0.Location = new System.Drawing.Point(293, 57);
             this.txtX0.Margin = new System.Windows.Forms.Padding(4);
             this.txtX0.Name = "txtX0";
             this.txtX0.Size = new System.Drawing.Size(132, 22);
             this.txtX0.TabIndex = 1;
+
             // 
-            // txtX1
+            // txtFuncion
             // 
+          
             this.txtX1.Location = new System.Drawing.Point(463, 57);
             this.txtX1.Margin = new System.Windows.Forms.Padding(4);
             this.txtX1.Name = "txtX1";
             this.txtX1.Size = new System.Drawing.Size(132, 22);
             this.txtX1.TabIndex = 2;
+
             // 
-            // txtX2
+            // txtx0
             // 
+
             this.txtX2.Location = new System.Drawing.Point(635, 57);
             this.txtX2.Margin = new System.Windows.Forms.Padding(4);
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(132, 22);
             this.txtX2.TabIndex = 3;
+
             // 
-            // btnCalculate
+            // txtx1
             // 
+
             this.btnCalculate.Location = new System.Drawing.Point(327, 154);
             this.btnCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalculate.Name = "btnCalculate";
@@ -79,18 +91,22 @@
             this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+
             // 
-            // txtResult
+            // txtx2
             // 
+
             this.txtResult.Location = new System.Drawing.Point(472, 172);
             this.txtResult.Margin = new System.Windows.Forms.Padding(4);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(327, 171);
             this.txtResult.TabIndex = 5;
+
             // 
-            // btnclose
+            // txtTolerancia
             // 
+
             this.btnclose.Location = new System.Drawing.Point(60, 298);
             this.btnclose.Margin = new System.Windows.Forms.Padding(4);
             this.btnclose.Name = "btnclose";
@@ -99,11 +115,13 @@
             this.btnclose.Text = "Cerrar";
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+           
             // 
             // MetodoMuller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(849, 507);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.txtResult);
@@ -115,19 +133,21 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MetodoMuller";
             this.Text = "MetodoMuller";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtFunction;
-        private System.Windows.Forms.TextBox txtX0;
-        private System.Windows.Forms.TextBox txtX1;
-        private System.Windows.Forms.TextBox txtX2;
-        private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.Button bntCalcular;
+        private System.Windows.Forms.TextBox txtFuncion;
+        private System.Windows.Forms.TextBox txtx0;
+        private System.Windows.Forms.TextBox txtx1;
+        private System.Windows.Forms.TextBox txtx2;
+        private System.Windows.Forms.TextBox txtTolerancia;
+        private System.Windows.Forms.TextBox txtMaxiter;
+        private System.Windows.Forms.DataGridView dataGridViewResultadoMuller;
     }
 }
