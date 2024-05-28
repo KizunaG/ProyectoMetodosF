@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using NCalc; // Asegúrate de haber instalado NCalc a través de NuGet
+using NCalc;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
-using System.Drawing.Printing;
-using LinqExpression = System.Linq.Expressions.Expression;
-using System.Xml.Linq;
 
 namespace ProyectoMetodosF
 {
@@ -21,19 +18,12 @@ namespace ProyectoMetodosF
             InitializeComponent();
         }
 
-        private void btnclose_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
             try
             {
-                // Capturar los datos de entrada del usuario
                 string funcion = txtFuncion.Text;
 
-                // Validar y convertir los valores de entrada
                 if (!double.TryParse(txtx0.Text, out double x0))
                 {
                     MessageBox.Show("Valor de x0 no válido");
@@ -52,7 +42,7 @@ namespace ProyectoMetodosF
                     return;
                 }
 
-                if (!float.TryParse(txtTolerancia.Text, out float tolerancia))
+                if (!double.TryParse(txtTolerancia.Text, out double tolerancia))
                 {
                     MessageBox.Show("Valor de tolerancia no válido");
                     return;
@@ -64,7 +54,6 @@ namespace ProyectoMetodosF
                     return;
                 }
 
-                // Validar la función ingresada
                 if (!ValidarFuncion(funcion))
                 {
                     MessageBox.Show("Función no válida. Asegúrate de que la función sea correcta.");
@@ -73,7 +62,9 @@ namespace ProyectoMetodosF
 
                 var iteraciones = new List<(int iteracion, double xr, double error)>();
 
-                // Implementación del método de Müller
+                double h0 = x1 - x0;
+                double h1 = x2 - x1;
+
                 for (int i = 0; i < maxIter; i++)
                 {
                     // Evaluar la función en x0, x1, x2
@@ -81,25 +72,29 @@ namespace ProyectoMetodosF
                     double f1 = EvaluarFuncion(funcion, x1);
                     double f2 = EvaluarFuncion(funcion, x2);
 
-                    // Coeficientes del polinomio cuadrático
-                    double h1 = x1 - x0;
-                    double h2 = x2 - x1;
-                    double delta1 = (f1 - f0) / h1;
-                    double delta2 = (f2 - f1) / h2;
-                    double a = (delta2 - delta1) / (h2 + h1);
-                    double b = a * h2 + delta2;
+                    // Calcular las diferencias divididas
+                    double delta1 = (f1 - f0) / h0;
+                    double delta2 = (f2 - f1) / h1;
+                    double lambda = (delta2 - delta1) / (h1 + h0);
+
+                    // Calcular las constantes de la ecuación cuadrática
+                    double a = lambda;
+                    double b = lambda * h1 + delta2;
                     double c = f2;
 
                     // Calcular el discriminante
                     double discriminante = Math.Sqrt(b * b - 4 * a * c);
-                    double denominador1 = b + discriminante;
-                    double denominador2 = b - discriminante;
 
-                    // Evitar división por cero
-                    double denominador = Math.Abs(denominador1) > Math.Abs(denominador2) ? denominador1 : denominador2;
+                    // Elegir el denominador con la mayor magnitud
+                    double denominador = Math.Abs(b + Math.Sign(b) * discriminante) > Math.Abs(b - Math.Sign(b) * discriminante)
+                        ? b + Math.Sign(b) * discriminante : b - Math.Sign(b) * discriminante;
+
+                    // Calcular la nueva aproximación
                     double dxr = -2 * c / denominador;
                     double xr = x2 + dxr;
-                    double error = Math.Abs(dxr);
+
+                    // Calcular el error relativo
+                    double error = Math.Abs((xr - x2) / xr) * 100;
 
                     // Almacenar la iteración en la lista
                     iteraciones.Add((i + 1, xr, error));
@@ -112,19 +107,24 @@ namespace ProyectoMetodosF
                     x0 = x1;
                     x1 = x2;
                     x2 = xr;
+                    h0 = x1 - x0;
+                    h1 = x2 - x1;
                 }
 
                 // Insertar los resultados en la base de datos
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
+                    string insertCalculoQuery = "INSERT INTO Calculo DEFAULT VALUES; SELECT SCOPE_IDENTITY();";
+                    SqlCommand calculoCommand = new SqlCommand(insertCalculoQuery, connection);
+                    int calculoId = Convert.ToInt32(calculoCommand.ExecuteScalar());
 
                     foreach (var iter in iteraciones)
                     {
                         string query = "INSERT INTO MetodoMuller (calculo_id, iteracion, xr, error) VALUES (@calculo_id, @iteracion, @xr, @error)";
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
-                            command.Parameters.AddWithValue("@calculo_id", 1); // Podrías generar un nuevo calculo_id
+                            command.Parameters.AddWithValue("@calculo_id", calculoId);
                             command.Parameters.AddWithValue("@iteracion", iter.iteracion);
                             command.Parameters.AddWithValue("@xr", iter.xr);
                             command.Parameters.AddWithValue("@error", iter.error);
@@ -142,7 +142,6 @@ namespace ProyectoMetodosF
             }
         }
 
-        // Método para evaluar la función en un punto dado
         private double EvaluarFuncion(string funcion, double x)
         {
             try
@@ -158,7 +157,6 @@ namespace ProyectoMetodosF
             }
         }
 
-        // Método para validar la función ingresada
         private bool ValidarFuncion(string funcion)
         {
             try
@@ -178,10 +176,12 @@ namespace ProyectoMetodosF
         {
             try
             {
+                dataGridViewResultadoMuller.DataSource = null; // Limpiar el DataGridView antes de cargar nuevos datos
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT id, calculo_id, iteracion, xr, error FROM MetodoMuller";
+                    string query = "SELECT iteracion, xr, error FROM MetodoMuller WHERE calculo_id = (SELECT MAX(id) FROM Calculo)";
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
 
                     DataTable dataTable = new DataTable();
@@ -233,8 +233,25 @@ namespace ProyectoMetodosF
                 }
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtFuncion.Clear();
+            txtx0.Clear();
+            txtx1.Clear();
+            txtx2.Clear();
+            txtTolerancia.Clear();
+            txtMaxiter.Clear();
+            dataGridViewResultadoMuller.DataSource = null;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+
 
     
 
