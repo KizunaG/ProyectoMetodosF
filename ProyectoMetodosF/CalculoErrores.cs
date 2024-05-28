@@ -23,7 +23,6 @@ namespace ProyectoMetodosF
             try
             {
                 string funcion = txtFuncion.Text;
-                string derivada = txtDerivada.Text;
 
                 if (!double.TryParse(txtx0.Text, out double x0))
                 {
@@ -43,9 +42,9 @@ namespace ProyectoMetodosF
                     return;
                 }
 
-                if (!ValidarFuncion(funcion) || !ValidarFuncion(derivada))
+                if (!ValidarFuncion(funcion))
                 {
-                    MessageBox.Show("Función o derivada no válida. Asegúrate de que ambas funciones sean correctas.");
+                    MessageBox.Show("Función no válida. Asegúrate de que la función sea correcta.");
                     return;
                 }
 
@@ -54,7 +53,7 @@ namespace ProyectoMetodosF
                 for (int i = 0; i < maxIter; i++)
                 {
                     double fx = EvaluarFuncion(funcion, x0);
-                    double dfx = EvaluarFuncion(derivada, x0);
+                    double dfx = CalcularDerivada(funcion, x0);
 
                     if (dfx == 0)
                     {
@@ -73,13 +72,13 @@ namespace ProyectoMetodosF
                     x0 = xr;
                 }
 
-                // Insertar un nuevo registro en la tabla Calculo y obtener el calculo_id
-                int calculoId;
+                // Insertar los resultados en la base de datos
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
 
-                    using (SqlCommand command = new SqlCommand("INSERT INTO Calculo OUTPUT INSERTED.ID VALUES (DEFAULT)", connection))
+                    int calculoId;
+                    using (SqlCommand command = new SqlCommand("INSERT INTO Calculo OUTPUT INSERTED.id VALUES (DEFAULT)", connection))
                     {
                         calculoId = (int)command.ExecuteScalar();
                     }
@@ -98,12 +97,8 @@ namespace ProyectoMetodosF
                     }
                 }
 
-                // Limpiar el DataGridView antes de cargar los nuevos datos
-                dataGridViewResultadoNewtonRaphson.DataSource = null;
-                dataGridViewResultadoNewtonRaphson.Rows.Clear();
-                dataGridViewResultadoNewtonRaphson.Columns.Clear();
-
-                CargarDatosDesdeSQL(calculoId);
+                // Cargar y mostrar los resultados en el DataGridView
+                CargarDatosDesdeSQL();
             }
             catch (Exception ex)
             {
@@ -126,6 +121,14 @@ namespace ProyectoMetodosF
             }
         }
 
+        private double CalcularDerivada(string funcion, double x)
+        {
+            double h = 1e-9; // Tamaño del paso para la aproximación de la derivada
+            double fxph = EvaluarFuncion(funcion, x + h);
+            double fxmh = EvaluarFuncion(funcion, x - h);
+            return (fxph - fxmh) / (2 * h);
+        }
+
         private bool ValidarFuncion(string funcion)
         {
             try
@@ -141,16 +144,17 @@ namespace ProyectoMetodosF
             }
         }
 
-        private void CargarDatosDesdeSQL(int calculoId)
+        private void CargarDatosDesdeSQL()
         {
             try
             {
+                dataGridViewResultadoNewtonRaphson.DataSource = null; // Limpiar el DataGridView antes de cargar nuevos datos
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT iteracion, xr, error FROM MetodoNewtonRaphson WHERE calculo_id = @calculo_id";
+                    string query = "SELECT iteracion, xr, error FROM MetodoNewtonRaphson WHERE calculo_id = (SELECT MAX(id) FROM Calculo)";
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                    adapter.SelectCommand.Parameters.AddWithValue("@calculo_id", calculoId);
 
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
@@ -202,6 +206,18 @@ namespace ProyectoMetodosF
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            dataGridViewResultadoNewtonRaphson.DataSource = null;
+            dataGridViewResultadoNewtonRaphson.Rows.Clear();
+            dataGridViewResultadoNewtonRaphson.Columns.Clear();
+            dataGridViewResultadoNewtonRaphson.Refresh();
+            txtFuncion.Clear();
+            txtx0.Clear();
+            txtTolerancia.Clear();
+            txtMaxiter.Clear();
         }
     }
 }

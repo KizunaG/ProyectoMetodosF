@@ -208,5 +208,17 @@ namespace ProyectoMetodosF
         {
             this.Close();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            dataGridViewResultadoSecante.DataSource = null;
+            dataGridViewResultadoSecante.Rows.Clear();
+            dataGridViewResultadoSecante.Columns.Clear();
+            dataGridViewResultadoSecante.Refresh();
+            txtFuncion.Clear();
+            txtx0.Clear();
+            txtTolerancia.Clear();
+            txtMaxiter.Clear();
+        }
     }
 }

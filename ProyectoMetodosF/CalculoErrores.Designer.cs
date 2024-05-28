@@ -36,6 +36,7 @@
             this.btnPdf = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.dataGridViewResultadoNewtonRaphson = new System.Windows.Forms.DataGridView();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoNewtonRaphson)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,11 +106,22 @@
             this.dataGridViewResultadoNewtonRaphson.Size = new System.Drawing.Size(240, 150);
             this.dataGridViewResultadoNewtonRaphson.TabIndex = 7;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(188, 185);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 8;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // MetodoNewton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 412);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dataGridViewResultadoNewtonRaphson);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnPdf);
@@ -136,5 +148,6 @@
         private System.Windows.Forms.Button btnPdf;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridView dataGridViewResultadoNewtonRaphson;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

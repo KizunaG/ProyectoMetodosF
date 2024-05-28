@@ -37,6 +37,7 @@
             this.btnPdf = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
             this.dataGridViewResultadoSecante = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoSecante)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +114,22 @@
             this.dataGridViewResultadoSecante.Size = new System.Drawing.Size(240, 150);
             this.dataGridViewResultadoSecante.TabIndex = 8;
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(185, 149);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Limpiar";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // MetodoSecante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 412);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.dataGridViewResultadoSecante);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.btnPdf);
@@ -146,5 +158,6 @@
         private System.Windows.Forms.Button btnPdf;
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.DataGridView dataGridViewResultadoSecante;
+        private System.Windows.Forms.Button btnClear;
     }
 }
