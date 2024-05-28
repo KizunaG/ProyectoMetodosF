@@ -20,31 +20,6 @@ namespace ProyectoMetodosF
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Obtener valores del usuario
-                double x0 = double.Parse(x0TextBox.Text);
-                double x1 = double.Parse(x1TextBox.Text);
-                double x2 = double.Parse(x2TextBox.Text);
-                double f_x0 = double.Parse(f_x0TextBox.Text);
-                double f_x1 = double.Parse(f_x1TextBox.Text);
-                double f_x2 = double.Parse(f_x2TextBox.Text);
-                double x_target = double.Parse(xTargetTextBox.Text);
-
-                // Crear el interpolador cuadrático
-                InterCuadra interpolador = new InterCuadra(x0, x1, x2, f_x0, f_x1, f_x2, x_target);
-
-                // Realizar la interpolación
-                double[] resultado = interpolador.RealizarInterpolacion();
-
-                // Mostrar resultados
-                resultLabel.Text = "Estimación de f(2): " + resultado[0].ToString("F7");
-                errorLabel.Text = "Error relativo porcentual: " + resultado[1].ToString("F1") + "%";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
         }
 
         private void btnclose_Click(object sender, EventArgs e)

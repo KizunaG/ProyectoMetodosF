@@ -103,8 +103,6 @@
     <Compile Include="Integrantes.Designer.cs">
       <DependentUpon>Integrantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterCuadra.cs" />
-    <Compile Include="InterLI.cs" />
     <Compile Include="InterpolacionCuadratica.cs">
       <SubType>Form</SubType>
     </Compile>
