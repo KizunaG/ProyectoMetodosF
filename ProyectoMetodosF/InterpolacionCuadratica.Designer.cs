@@ -28,149 +28,159 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.x0TextBox = new System.Windows.Forms.TextBox();
-            this.x1TextBox = new System.Windows.Forms.TextBox();
-            this.x2TextBox = new System.Windows.Forms.TextBox();
-            this.xTargetTextBox = new System.Windows.Forms.TextBox();
-            this.f_x0TextBox = new System.Windows.Forms.TextBox();
-            this.f_x1TextBox = new System.Windows.Forms.TextBox();
-            this.f_x2TextBox = new System.Windows.Forms.TextBox();
-            this.resultLabel = new System.Windows.Forms.Label();
-            this.errorLabel = new System.Windows.Forms.Label();
-            this.calculateButton = new System.Windows.Forms.Button();
-            this.btnclose = new System.Windows.Forms.Button();
-            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.txtCoeficiente11 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente12 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente13 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente21 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente22 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente23 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente31 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente32 = new System.Windows.Forms.TextBox();
+            this.txtCoeficiente33 = new System.Windows.Forms.TextBox();
+            this.txtIndependiente1 = new System.Windows.Forms.TextBox();
+            this.txtIndependiente2 = new System.Windows.Forms.TextBox();
+            this.txtIndependiente3 = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.dataGridViewResultadoMuller = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).BeginInit();
             this.SuspendLayout();
             // 
-            // x0TextBox
+            // txtCoeficiente11
             // 
-            this.x0TextBox.Location = new System.Drawing.Point(53, 55);
-            this.x0TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.x0TextBox.Name = "x0TextBox";
-            this.x0TextBox.Size = new System.Drawing.Size(132, 22);
-            this.x0TextBox.TabIndex = 0;
+            this.txtCoeficiente11.Location = new System.Drawing.Point(12, 58);
+            this.txtCoeficiente11.Name = "txtCoeficiente11";
+            this.txtCoeficiente11.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente11.TabIndex = 0;
             // 
-            // x1TextBox
+            // txtCoeficiente12
             // 
-            this.x1TextBox.Location = new System.Drawing.Point(290, 55);
-            this.x1TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.x1TextBox.Name = "x1TextBox";
-            this.x1TextBox.Size = new System.Drawing.Size(132, 22);
-            this.x1TextBox.TabIndex = 1;
+            this.txtCoeficiente12.Location = new System.Drawing.Point(121, 58);
+            this.txtCoeficiente12.Name = "txtCoeficiente12";
+            this.txtCoeficiente12.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente12.TabIndex = 1;
             // 
-            // x2TextBox
+            // txtCoeficiente13
             // 
-            this.x2TextBox.Location = new System.Drawing.Point(475, 55);
-            this.x2TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.x2TextBox.Name = "x2TextBox";
-            this.x2TextBox.Size = new System.Drawing.Size(132, 22);
-            this.x2TextBox.TabIndex = 2;
+            this.txtCoeficiente13.Location = new System.Drawing.Point(227, 58);
+            this.txtCoeficiente13.Name = "txtCoeficiente13";
+            this.txtCoeficiente13.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente13.TabIndex = 2;
             // 
-            // xTargetTextBox
+            // txtCoeficiente21
             // 
-            this.xTargetTextBox.Location = new System.Drawing.Point(669, 55);
-            this.xTargetTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.xTargetTextBox.Name = "xTargetTextBox";
-            this.xTargetTextBox.Size = new System.Drawing.Size(132, 22);
-            this.xTargetTextBox.TabIndex = 3;
+            this.txtCoeficiente21.Location = new System.Drawing.Point(12, 84);
+            this.txtCoeficiente21.Name = "txtCoeficiente21";
+            this.txtCoeficiente21.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente21.TabIndex = 3;
             // 
-            // f_x0TextBox
+            // txtCoeficiente22
             // 
-            this.f_x0TextBox.Location = new System.Drawing.Point(199, 138);
-            this.f_x0TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.f_x0TextBox.Name = "f_x0TextBox";
-            this.f_x0TextBox.Size = new System.Drawing.Size(132, 22);
-            this.f_x0TextBox.TabIndex = 4;
+            this.txtCoeficiente22.Location = new System.Drawing.Point(121, 84);
+            this.txtCoeficiente22.Name = "txtCoeficiente22";
+            this.txtCoeficiente22.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente22.TabIndex = 4;
             // 
-            // f_x1TextBox
+            // txtCoeficiente23
             // 
-            this.f_x1TextBox.Location = new System.Drawing.Point(384, 138);
-            this.f_x1TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.f_x1TextBox.Name = "f_x1TextBox";
-            this.f_x1TextBox.Size = new System.Drawing.Size(132, 22);
-            this.f_x1TextBox.TabIndex = 5;
+            this.txtCoeficiente23.Location = new System.Drawing.Point(227, 84);
+            this.txtCoeficiente23.Name = "txtCoeficiente23";
+            this.txtCoeficiente23.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente23.TabIndex = 5;
             // 
-            // f_x2TextBox
+            // txtCoeficiente31
             // 
-            this.f_x2TextBox.Location = new System.Drawing.Point(583, 138);
-            this.f_x2TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.f_x2TextBox.Name = "f_x2TextBox";
-            this.f_x2TextBox.Size = new System.Drawing.Size(132, 22);
-            this.f_x2TextBox.TabIndex = 6;
+            this.txtCoeficiente31.Location = new System.Drawing.Point(15, 110);
+            this.txtCoeficiente31.Name = "txtCoeficiente31";
+            this.txtCoeficiente31.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente31.TabIndex = 6;
             // 
-            // resultLabel
+            // txtCoeficiente32
             // 
-            this.resultLabel.AutoSize = true;
-            this.resultLabel.Location = new System.Drawing.Point(287, 199);
-            this.resultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(44, 16);
-            this.resultLabel.TabIndex = 7;
-            this.resultLabel.Text = "label1";
+            this.txtCoeficiente32.Location = new System.Drawing.Point(121, 110);
+            this.txtCoeficiente32.Name = "txtCoeficiente32";
+            this.txtCoeficiente32.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente32.TabIndex = 7;
             // 
-            // errorLabel
+            // txtCoeficiente33
             // 
-            this.errorLabel.AutoSize = true;
-            this.errorLabel.Location = new System.Drawing.Point(656, 199);
-            this.errorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(44, 16);
-            this.errorLabel.TabIndex = 8;
-            this.errorLabel.Text = "label2";
+            this.txtCoeficiente33.Location = new System.Drawing.Point(227, 110);
+            this.txtCoeficiente33.Name = "txtCoeficiente33";
+            this.txtCoeficiente33.Size = new System.Drawing.Size(100, 20);
+            this.txtCoeficiente33.TabIndex = 8;
             // 
-            // calculateButton
+            // txtIndependiente1
             // 
-            this.calculateButton.Location = new System.Drawing.Point(436, 277);
-            this.calculateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(100, 28);
-            this.calculateButton.TabIndex = 9;
-            this.calculateButton.Text = "Calcular";
-            this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            this.txtIndependiente1.Location = new System.Drawing.Point(348, 58);
+            this.txtIndependiente1.Name = "txtIndependiente1";
+            this.txtIndependiente1.Size = new System.Drawing.Size(100, 20);
+            this.txtIndependiente1.TabIndex = 9;
             // 
-            // btnclose
+            // txtIndependiente2
             // 
-            this.btnclose.Location = new System.Drawing.Point(16, 326);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(100, 28);
-            this.btnclose.TabIndex = 10;
-            this.btnclose.Text = "Cerrar";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            this.txtIndependiente2.Location = new System.Drawing.Point(348, 84);
+            this.txtIndependiente2.Name = "txtIndependiente2";
+            this.txtIndependiente2.Size = new System.Drawing.Size(100, 20);
+            this.txtIndependiente2.TabIndex = 10;
             // 
-            // btnlimpiar
+            // txtIndependiente3
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(568, 277);
-            this.btnlimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(100, 28);
-            this.btnlimpiar.TabIndex = 11;
-            this.btnlimpiar.Text = "Limpiar";
-            this.btnlimpiar.UseVisualStyleBackColor = true;
-            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
+            this.txtIndependiente3.Location = new System.Drawing.Point(348, 110);
+            this.txtIndependiente3.Name = "txtIndependiente3";
+            this.txtIndependiente3.Size = new System.Drawing.Size(100, 20);
+            this.txtIndependiente3.TabIndex = 11;
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(215, 169);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.TabIndex = 12;
+            this.btnCalculate.Text = "button1";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
+            // dataGridViewResultadoMuller
+            // 
+            this.dataGridViewResultadoMuller.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResultadoMuller.Location = new System.Drawing.Point(367, 148);
+            this.dataGridViewResultadoMuller.Name = "dataGridViewResultadoMuller";
+            this.dataGridViewResultadoMuller.Size = new System.Drawing.Size(240, 150);
+            this.dataGridViewResultadoMuller.TabIndex = 13;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(215, 210);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 14;
+            this.btnClear.Text = "Limpiar";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // MetodoGauss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 507);
-            this.Controls.Add(this.btnlimpiar);
-            this.Controls.Add(this.btnclose);
-            this.Controls.Add(this.calculateButton);
-            this.Controls.Add(this.errorLabel);
-            this.Controls.Add(this.resultLabel);
-            this.Controls.Add(this.f_x2TextBox);
-            this.Controls.Add(this.f_x1TextBox);
-            this.Controls.Add(this.f_x0TextBox);
-            this.Controls.Add(this.xTargetTextBox);
-            this.Controls.Add(this.x2TextBox);
-            this.Controls.Add(this.x1TextBox);
-            this.Controls.Add(this.x0TextBox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(637, 412);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.dataGridViewResultadoMuller);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.txtIndependiente3);
+            this.Controls.Add(this.txtIndependiente2);
+            this.Controls.Add(this.txtIndependiente1);
+            this.Controls.Add(this.txtCoeficiente33);
+            this.Controls.Add(this.txtCoeficiente32);
+            this.Controls.Add(this.txtCoeficiente31);
+            this.Controls.Add(this.txtCoeficiente23);
+            this.Controls.Add(this.txtCoeficiente22);
+            this.Controls.Add(this.txtCoeficiente21);
+            this.Controls.Add(this.txtCoeficiente13);
+            this.Controls.Add(this.txtCoeficiente12);
+            this.Controls.Add(this.txtCoeficiente11);
             this.Name = "MetodoGauss";
             this.Text = "MetodoGauss";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,17 +188,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox x0TextBox;
-        private System.Windows.Forms.TextBox x1TextBox;
-        private System.Windows.Forms.TextBox x2TextBox;
-        private System.Windows.Forms.TextBox xTargetTextBox;
-        private System.Windows.Forms.TextBox f_x0TextBox;
-        private System.Windows.Forms.TextBox f_x1TextBox;
-        private System.Windows.Forms.TextBox f_x2TextBox;
-        private System.Windows.Forms.Label resultLabel;
-        private System.Windows.Forms.Label errorLabel;
-        private System.Windows.Forms.Button calculateButton;
-        private System.Windows.Forms.Button btnclose;
-        private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.TextBox txtCoeficiente11;
+        private System.Windows.Forms.TextBox txtCoeficiente12;
+        private System.Windows.Forms.TextBox txtCoeficiente13;
+        private System.Windows.Forms.TextBox txtCoeficiente21;
+        private System.Windows.Forms.TextBox txtCoeficiente22;
+        private System.Windows.Forms.TextBox txtCoeficiente23;
+        private System.Windows.Forms.TextBox txtCoeficiente31;
+        private System.Windows.Forms.TextBox txtCoeficiente32;
+        private System.Windows.Forms.TextBox txtCoeficiente33;
+        private System.Windows.Forms.TextBox txtIndependiente1;
+        private System.Windows.Forms.TextBox txtIndependiente2;
+        private System.Windows.Forms.TextBox txtIndependiente3;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.DataGridView dataGridViewResultadoMuller;
+        private System.Windows.Forms.Button btnClear;
     }
 }
