@@ -133,7 +133,7 @@ namespace ProyectoMetodosF
         {
             try
             {
-                dataGridViewResultadoMuller.DataSource = null; // Limpiar el DataGridView antes de cargar nuevos datos
+                dataGridViewResultadoGauss.DataSource = null; // Limpiar el DataGridView antes de cargar nuevos datos
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -144,24 +144,24 @@ namespace ProyectoMetodosF
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
 
-                    dataGridViewResultadoMuller.DataSource = dataTable;
+                    dataGridViewResultadoGauss.DataSource = dataTable;
                     
                     // Ocultar la columna ID
-                    if (dataGridViewResultadoMuller.Columns["ID"] != null)
+                    if (dataGridViewResultadoGauss.Columns["ID"] != null)
                     {
-                        dataGridViewResultadoMuller.Columns["ID"].Visible = false;
+                        dataGridViewResultadoGauss.Columns["ID"].Visible = false;
                     }
 
                     // Ocultar la columna ID
-                    if (dataGridViewResultadoMuller.Columns["Iteracion"] != null)
+                    if (dataGridViewResultadoGauss.Columns["Iteracion"] != null)
                     {
-                        dataGridViewResultadoMuller.Columns["Iteracion"].Visible = false;
+                        dataGridViewResultadoGauss.Columns["Iteracion"].Visible = false;
                     }
 
                     // Ocultar la columna calculo_id
-                    if (dataGridViewResultadoMuller.Columns["calculo_id"] != null)
+                    if (dataGridViewResultadoGauss.Columns["calculo_id"] != null)
                     {
-                        dataGridViewResultadoMuller.Columns["calculo_id"].Visible = false;
+                        dataGridViewResultadoGauss.Columns["calculo_id"].Visible = false;
                     }
                 }
             }
@@ -173,10 +173,10 @@ namespace ProyectoMetodosF
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            dataGridViewResultadoMuller.DataSource = null;
-            dataGridViewResultadoMuller.Rows.Clear();
-            dataGridViewResultadoMuller.Columns.Clear();
-            dataGridViewResultadoMuller.Refresh();
+            dataGridViewResultadoGauss.DataSource = null;
+            dataGridViewResultadoGauss.Rows.Clear();
+            dataGridViewResultadoGauss.Columns.Clear();
+            dataGridViewResultadoGauss.Refresh();
             txtCoeficiente11.Clear();
             txtCoeficiente12.Clear();
             txtCoeficiente13.Clear();
@@ -191,6 +191,47 @@ namespace ProyectoMetodosF
             txtIndependiente3.Clear();
 
 
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "PDF Files|*.pdf";
+            saveFileDialog.Title = "Save a PDF File";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(saveFileDialog.FileName, FileMode.Create))
+                {
+                    Document pdfDoc = new Document(PageSize.A4);
+                    PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+
+                    PdfPTable table = new PdfPTable(dataGridViewResultadoGauss.Columns.Count);
+
+                    foreach (DataGridViewColumn column in dataGridViewResultadoGauss.Columns)
+                    {
+                        table.AddCell(new Phrase(column.HeaderText));
+                    }
+
+                    foreach (DataGridViewRow row in dataGridViewResultadoGauss.Rows)
+                    {
+                        if (row.IsNewRow) continue;
+                        foreach (DataGridViewCell cell in row.Cells)
+                        {
+                            table.AddCell(new Phrase(cell.Value?.ToString() ?? ""));
+                        }
+                    }
+
+                    pdfDoc.Add(table);
+                    pdfDoc.Close();
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

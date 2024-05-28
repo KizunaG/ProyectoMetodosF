@@ -41,9 +41,11 @@
             this.txtIndependiente2 = new System.Windows.Forms.TextBox();
             this.txtIndependiente3 = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.dataGridViewResultadoMuller = new System.Windows.Forms.DataGridView();
+            this.dataGridViewResultadoGauss = new System.Windows.Forms.DataGridView();
             this.btnClear = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).BeginInit();
+            this.btnPDF = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoGauss)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCoeficiente11
@@ -132,25 +134,25 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(215, 169);
+            this.btnCalculate.Location = new System.Drawing.Point(121, 168);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 12;
-            this.btnCalculate.Text = "button1";
+            this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // dataGridViewResultadoMuller
+            // dataGridViewResultadoGauss
             // 
-            this.dataGridViewResultadoMuller.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResultadoMuller.Location = new System.Drawing.Point(367, 148);
-            this.dataGridViewResultadoMuller.Name = "dataGridViewResultadoMuller";
-            this.dataGridViewResultadoMuller.Size = new System.Drawing.Size(240, 150);
-            this.dataGridViewResultadoMuller.TabIndex = 13;
+            this.dataGridViewResultadoGauss.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResultadoGauss.Location = new System.Drawing.Point(367, 148);
+            this.dataGridViewResultadoGauss.Name = "dataGridViewResultadoGauss";
+            this.dataGridViewResultadoGauss.Size = new System.Drawing.Size(240, 150);
+            this.dataGridViewResultadoGauss.TabIndex = 13;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(215, 210);
+            this.btnClear.Location = new System.Drawing.Point(252, 168);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 14;
@@ -158,13 +160,35 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnPDF
+            // 
+            this.btnPDF.Location = new System.Drawing.Point(186, 210);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 23);
+            this.btnPDF.TabIndex = 15;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(15, 275);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Cerrar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // MetodoGauss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 412);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.dataGridViewResultadoMuller);
+            this.Controls.Add(this.dataGridViewResultadoGauss);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtIndependiente3);
             this.Controls.Add(this.txtIndependiente2);
@@ -180,7 +204,7 @@
             this.Controls.Add(this.txtCoeficiente11);
             this.Name = "MetodoGauss";
             this.Text = "MetodoGauss";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoMuller)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoGauss)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +225,9 @@
         private System.Windows.Forms.TextBox txtIndependiente2;
         private System.Windows.Forms.TextBox txtIndependiente3;
         private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.DataGridView dataGridViewResultadoMuller;
+        private System.Windows.Forms.DataGridView dataGridViewResultadoGauss;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnPDF;
+        private System.Windows.Forms.Button button2;
     }
 }
