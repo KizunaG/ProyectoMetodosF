@@ -28,127 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtX0 = new System.Windows.Forms.TextBox();
-            this.txtX1 = new System.Windows.Forms.TextBox();
-            this.txtLogX0 = new System.Windows.Forms.TextBox();
-            this.txtLogX1 = new System.Windows.Forms.TextBox();
-            this.txtXTarget = new System.Windows.Forms.TextBox();
-            this.lblResult = new System.Windows.Forms.Label();
-            this.lblError = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtFuncion = new System.Windows.Forms.TextBox();
+            this.txtx0 = new System.Windows.Forms.TextBox();
+            this.txtx1 = new System.Windows.Forms.TextBox();
+            this.txtTolerancia = new System.Windows.Forms.TextBox();
+            this.txtMaxiter = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnPdf = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
+            this.dataGridViewResultadoSecante = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoSecante)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtX0
+            // txtFuncion
             // 
-            this.txtX0.Location = new System.Drawing.Point(13, 82);
-            this.txtX0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtX0.Name = "txtX0";
-            this.txtX0.Size = new System.Drawing.Size(132, 22);
-            this.txtX0.TabIndex = 0;
+            this.txtFuncion.Location = new System.Drawing.Point(36, 33);
+            this.txtFuncion.Name = "txtFuncion";
+            this.txtFuncion.Size = new System.Drawing.Size(100, 20);
+            this.txtFuncion.TabIndex = 0;
             // 
-            // txtX1
+            // txtx0
             // 
-            this.txtX1.Location = new System.Drawing.Point(184, 82);
-            this.txtX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(132, 22);
-            this.txtX1.TabIndex = 1;
+            this.txtx0.Location = new System.Drawing.Point(142, 33);
+            this.txtx0.Name = "txtx0";
+            this.txtx0.Size = new System.Drawing.Size(100, 20);
+            this.txtx0.TabIndex = 1;
             // 
-            // txtLogX0
+            // txtx1
             // 
-            this.txtLogX0.Location = new System.Drawing.Point(345, 82);
-            this.txtLogX0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtLogX0.Name = "txtLogX0";
-            this.txtLogX0.Size = new System.Drawing.Size(132, 22);
-            this.txtLogX0.TabIndex = 2;
+            this.txtx1.Location = new System.Drawing.Point(258, 33);
+            this.txtx1.Name = "txtx1";
+            this.txtx1.Size = new System.Drawing.Size(100, 20);
+            this.txtx1.TabIndex = 2;
             // 
-            // txtLogX1
+            // txtTolerancia
             // 
-            this.txtLogX1.Location = new System.Drawing.Point(497, 82);
-            this.txtLogX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtLogX1.Name = "txtLogX1";
-            this.txtLogX1.Size = new System.Drawing.Size(132, 22);
-            this.txtLogX1.TabIndex = 3;
+            this.txtTolerancia.Location = new System.Drawing.Point(375, 33);
+            this.txtTolerancia.Name = "txtTolerancia";
+            this.txtTolerancia.Size = new System.Drawing.Size(100, 20);
+            this.txtTolerancia.TabIndex = 3;
             // 
-            // txtXTarget
+            // txtMaxiter
             // 
-            this.txtXTarget.Location = new System.Drawing.Point(660, 82);
-            this.txtXTarget.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtXTarget.Name = "txtXTarget";
-            this.txtXTarget.Size = new System.Drawing.Size(132, 22);
-            this.txtXTarget.TabIndex = 4;
+            this.txtMaxiter.Location = new System.Drawing.Point(481, 33);
+            this.txtMaxiter.Name = "txtMaxiter";
+            this.txtMaxiter.Size = new System.Drawing.Size(100, 20);
+            this.txtMaxiter.TabIndex = 4;
             // 
-            // lblResult
+            // btnCalcular
             // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(399, 149);
-            this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 16);
-            this.lblResult.TabIndex = 5;
+            this.btnCalcular.Location = new System.Drawing.Point(131, 105);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.TabIndex = 5;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // lblError
+            // btnPdf
             // 
-            this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(541, 149);
-            this.lblError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 16);
-            this.lblError.TabIndex = 6;
+            this.btnPdf.Location = new System.Drawing.Point(231, 105);
+            this.btnPdf.Name = "btnPdf";
+            this.btnPdf.Size = new System.Drawing.Size(75, 23);
+            this.btnPdf.TabIndex = 6;
+            this.btnPdf.Text = "PDF";
+            this.btnPdf.UseVisualStyleBackColor = true;
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
-            // button1
+            // btnclose
             // 
-            this.button1.Location = new System.Drawing.Point(377, 218);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnclose.Location = new System.Drawing.Point(25, 243);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(75, 23);
+            this.btnclose.TabIndex = 7;
+            this.btnclose.Text = "Close";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
-            // button2
+            // dataGridViewResultadoSecante
             // 
-            this.button2.Location = new System.Drawing.Point(545, 218);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(33, 324);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Cerrar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dataGridViewResultadoSecante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResultadoSecante.Location = new System.Drawing.Point(341, 96);
+            this.dataGridViewResultadoSecante.Name = "dataGridViewResultadoSecante";
+            this.dataGridViewResultadoSecante.Size = new System.Drawing.Size(240, 150);
+            this.dataGridViewResultadoSecante.TabIndex = 8;
             // 
             // MetodoSecante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 507);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblError);
-            this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.txtXTarget);
-            this.Controls.Add(this.txtLogX1);
-            this.Controls.Add(this.txtLogX0);
-            this.Controls.Add(this.txtX1);
-            this.Controls.Add(this.txtX0);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(637, 412);
+            this.Controls.Add(this.dataGridViewResultadoSecante);
+            this.Controls.Add(this.btnclose);
+            this.Controls.Add(this.btnPdf);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtMaxiter);
+            this.Controls.Add(this.txtTolerancia);
+            this.Controls.Add(this.txtx1);
+            this.Controls.Add(this.txtx0);
+            this.Controls.Add(this.txtFuncion);
             this.Name = "MetodoSecante";
             this.Text = "MetodoSecante";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultadoSecante)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,15 +137,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtX0;
-        private System.Windows.Forms.TextBox txtX1;
-        private System.Windows.Forms.TextBox txtLogX0;
-        private System.Windows.Forms.TextBox txtLogX1;
-        private System.Windows.Forms.TextBox txtXTarget;
-        private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtFuncion;
+        private System.Windows.Forms.TextBox txtx0;
+        private System.Windows.Forms.TextBox txtx1;
+        private System.Windows.Forms.TextBox txtTolerancia;
+        private System.Windows.Forms.TextBox txtMaxiter;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button btnPdf;
+        private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.DataGridView dataGridViewResultadoSecante;
     }
 }
