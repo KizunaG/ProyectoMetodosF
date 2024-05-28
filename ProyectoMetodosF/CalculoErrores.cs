@@ -62,7 +62,7 @@ namespace ProyectoMetodosF
                     }
 
                     double xr = x0 - fx / dfx;
-                    double error = Math.Abs(xr - x0);
+                    double error = Math.Abs(xr - x0)/xr * 100;
 
                     iteraciones.Add((i + 1, xr, error));
 
