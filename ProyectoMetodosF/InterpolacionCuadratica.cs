@@ -233,6 +233,11 @@ namespace ProyectoMetodosF
         {
             this.Close();
         }
+
+        private void MetodoGauss_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

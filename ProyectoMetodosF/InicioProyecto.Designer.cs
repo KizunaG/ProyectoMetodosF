@@ -30,6 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -38,7 +43,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(348, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 39);
+            this.label1.Size = new System.Drawing.Size(147, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Proyecto";
             // 
@@ -52,15 +57,57 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Métodos Númericos";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(-1, 485);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 16);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Semestre 1-2024";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(-1, 469);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(298, 16);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Centro Universitario de Chiquimulilla, Santa Rosa";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(-1, 453);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(217, 16);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Facultad de Ingenieria en Sistemas";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoMetodosF.Properties.Resources.logometodos20;
+            this.pictureBox1.Location = new System.Drawing.Point(733, 388);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 121);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // InicioProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(849, 507);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InicioProyecto";
             this.Text = "InicioProyecto";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,5 +117,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

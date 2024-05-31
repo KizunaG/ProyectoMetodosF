@@ -45,7 +45,7 @@
             // 
             // btnlogin
             // 
-            this.btnlogin.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnlogin.BackColor = System.Drawing.Color.RosyBrown;
             this.btnlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.Location = new System.Drawing.Point(484, 297);
@@ -59,13 +59,14 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button2.Location = new System.Drawing.Point(15, 13);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(147, 28);
             this.button2.TabIndex = 1;
             this.button2.Text = "Cerrar Programa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
@@ -92,6 +93,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtUsuario.Location = new System.Drawing.Point(484, 207);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(208, 22);
@@ -100,6 +102,7 @@
             // 
             // txtContraseña
             // 
+            this.txtContraseña.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtContraseña.Location = new System.Drawing.Point(484, 251);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(208, 22);
@@ -156,7 +159,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoMetodosF.Properties.Resources.logometodos20;
-            this.pictureBox1.Location = new System.Drawing.Point(928, 431);
+            this.pictureBox1.Location = new System.Drawing.Point(940, 433);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 121);
             this.pictureBox1.TabIndex = 11;
@@ -166,6 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);

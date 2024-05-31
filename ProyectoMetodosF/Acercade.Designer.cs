@@ -161,7 +161,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoMetodosF.Properties.Resources.ccccccccccccccccccccccc;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(677, 326);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(121, 124);
             this.pictureBox1.TabIndex = 12;
@@ -171,6 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
