@@ -192,5 +192,89 @@
   <ItemGroup>
     <None Include="Resources\ccccccccccccccccccccccc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications_25694.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_education_math_icon_220529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_education_math_icon_2205291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_operations_icon_174399.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_education_math_icon_2205292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_calculator_icon_194802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage_remove_clean_recycle_bin_waste_trash_icon_219330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage_remove_clean_recycle_bin_waste_trash_icon_219330 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_pdf_icon_188248.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maths_83924.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_education_math_icon_220529 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_education_math_icon_220529 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_education_math_icon_220529 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_house_icon_147459.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrashPlan_23647.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_connect_social_communication_internet_connection_icon_230474.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose-2_102347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_3697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemunreadable_93487.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_icon-icons.com_73532.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-laptop-user-developer-programer_108610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-laptop-user-developer-programer_108610 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_write_22637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_66546 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_66546 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_66546 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_66546 %284%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

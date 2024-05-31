@@ -106,5 +106,10 @@ namespace ProyectoMetodosF
             childForm.BringToFront();
             childForm.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

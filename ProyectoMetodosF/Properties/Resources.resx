@@ -118,22 +118,106 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="logometodos20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logometodos20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ccccccccccccccccccccccc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ccccccccccccccccccccccc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo metodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo metodos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_house_icon_147459" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_house_icon_147459.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="garbage_remove_clean_recycle_bin_waste_trash_icon_219330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garbage_remove_clean_recycle_bin_waste_trash_icon_219330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Applications_25694" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Applications_25694.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fffffffffffffffffff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fffffffffffffffffff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="home_icon-icons.com_73532" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_icon-icons.com_73532.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about_3697" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about_3697.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrashPlan_23647" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrashPlan_23647.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_pdf_icon_188248" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_pdf_icon_188248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura de pantalla 2024-05-24 141342" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2024-05-24 141342.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_education_math_icon_2205291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_education_math_icon_2205291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="garbage_remove_clean_recycle_bin_waste_trash_icon_219330 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garbage_remove_clean_recycle_bin_waste_trash_icon_219330 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maths_83924" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maths_83924.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_icon-icons.com_66546 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_66546 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_icon-icons.com_66546 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_66546 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo fond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo fond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ccccccccccccccccccccccc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ccccccccccccccccccccccc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_icon-icons.com_66546 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_66546 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emblemunreadable_93487" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emblemunreadable_93487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logometodos20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logometodos20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer-laptop-user-developer-programer_108610" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer-laptop-user-developer-programer_108610.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_operations_icon_174399" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_operations_icon_174399.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_calculator_icon_194802" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_calculator_icon_194802.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choose-2_102347" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choose-2_102347.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_education_math_icon_220529" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_education_math_icon_220529.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo metodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo metodos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="network_connect_social_communication_internet_connection_icon_230474" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\network_connect_social_communication_internet_connection_icon_230474.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_education_math_icon_220529 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_education_math_icon_220529 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer-laptop-user-developer-programer_108610 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer-laptop-user-developer-programer_108610 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_education_math_icon_2205292" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_education_math_icon_2205292.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_education_math_icon_220529 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_education_math_icon_220529 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="school_education_math_icon_220529 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\school_education_math_icon_220529 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_write_22637" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_write_22637.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_icon-icons.com_66546 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_66546 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

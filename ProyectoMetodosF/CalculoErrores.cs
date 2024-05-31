@@ -219,5 +219,10 @@ namespace ProyectoMetodosF
             txtTolerancia.Clear();
             txtMaxiter.Clear();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
