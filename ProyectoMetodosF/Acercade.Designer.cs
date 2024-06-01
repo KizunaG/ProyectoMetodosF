@@ -179,9 +179,9 @@
             // 
             this.pictureBox1.Image = global::ProyectoMetodosF.Properties.Resources.ccccccccccccccccccccccc;
             this.pictureBox1.Location = new System.Drawing.Point(9, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(123, 114);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -204,7 +204,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Acercade";
             this.Text = "Acercade";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

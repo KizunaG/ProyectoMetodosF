@@ -171,7 +171,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ProyectoMetodosF.Properties.Resources.user_icon_icons_com_66546__4_;
-            this.pictureBox2.Location = new System.Drawing.Point(355, 130);
+            this.pictureBox2.Location = new System.Drawing.Point(344, 131);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 80);
