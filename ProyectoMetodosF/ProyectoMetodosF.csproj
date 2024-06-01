@@ -73,11 +73,11 @@
     <Compile Include="Acercade.Designer.cs">
       <DependentUpon>Acercade.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculoErrores.cs">
+    <Compile Include="MetodoNewton.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculoErrores.Designer.cs">
-      <DependentUpon>CalculoErrores.cs</DependentUpon>
+    <Compile Include="MetodoNewton.Designer.cs">
+      <DependentUpon>MetodoNewton.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -103,17 +103,17 @@
     <Compile Include="Integrantes.Designer.cs">
       <DependentUpon>Integrantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterpolacionCuadratica.cs">
+    <Compile Include="MetodoGauss.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterpolacionCuadratica.Designer.cs">
-      <DependentUpon>InterpolacionCuadratica.cs</DependentUpon>
+    <Compile Include="MetodoGauss.Designer.cs">
+      <DependentUpon>MetodoGauss.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterpolacionLineal.cs">
+    <Compile Include="MetodoSecante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterpolacionLineal.Designer.cs">
-      <DependentUpon>InterpolacionLineal.cs</DependentUpon>
+    <Compile Include="MetodoSecante.Designer.cs">
+      <DependentUpon>MetodoSecante.cs</DependentUpon>
     </Compile>
     <Compile Include="MetodoMuller.cs">
       <SubType>Form</SubType>
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="Acercade.resx">
       <DependentUpon>Acercade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalculoErrores.resx">
-      <DependentUpon>CalculoErrores.cs</DependentUpon>
+    <EmbeddedResource Include="MetodoNewton.resx">
+      <DependentUpon>MetodoNewton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -141,11 +141,11 @@
     <EmbeddedResource Include="Integrantes.resx">
       <DependentUpon>Integrantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterpolacionCuadratica.resx">
-      <DependentUpon>InterpolacionCuadratica.cs</DependentUpon>
+    <EmbeddedResource Include="MetodoGauss.resx">
+      <DependentUpon>MetodoGauss.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InterpolacionLineal.resx">
-      <DependentUpon>InterpolacionLineal.cs</DependentUpon>
+    <EmbeddedResource Include="MetodoSecante.resx">
+      <DependentUpon>MetodoSecante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MetodoMuller.resx">
       <DependentUpon>MetodoMuller.cs</DependentUpon>
