@@ -217,6 +217,7 @@ namespace ProyectoMetodosF
             dataGridViewResultadoSecante.Refresh();
             txtFuncion.Clear();
             txtx0.Clear();
+            txtx1.Clear();
             txtTolerancia.Clear();
             txtMaxiter.Clear();
         }
